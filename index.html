@@ -4,10 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Parisienne">
   </head>
   <body>
+    <nav role="navigation" class="primary-navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects &dtrif;</a>
+          <ul class="dropdown">
+            <li><a href="#">Vicious Cycles</a></li>
+            <li><a href="#">Empower Body and Mind</a></li>
+          </ul>
+       </li>
+        <li><a href="#">Experience &dtrif;</a>
+          <ul class="dropdown">
+            <li><a href="#">Job1</a></li>
+            <li><a href="#">Job2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
@@ -36,7 +56,7 @@
         </p>
 
         <!-- Copy the whole <section> block to add more projects. -->
-        <section >
+        <section id="p1">
           <h3>Project 1</h3>
           <img
             src="images/VC_FrontPage.png"
@@ -51,7 +71,7 @@
             target="_blank"
             >View project / case study</a
           >
-          <section >
+          <section id="p2">
             <h3>Project 2</h3>
             <img
               src="images/Empower_Body_and_Mind.png"
@@ -81,8 +101,21 @@
         </p>
 
         <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Job title</h3>
+        <section id="j1">
+          <h3>Job title 1</h3>
+          <p>Company Name</p>
+          <p>Date at job</p>
+          <p>Job summary goes here. Add as many paragraphs as you need.</p>
+          <p>Optional list:</p>
+          <ul>
+            <li>Delete this list if you don't need it.</li>
+            <li>Created...</li>
+            <li>Lead...</li>
+            <li>Responsible for...</li>
+          </ul>
+        </section>
+        <section id="j2">
+          <h3>Job title 2</h3>
           <p>Company Name</p>
           <p>Date at job</p>
           <p>Job summary goes here. Add as many paragraphs as you need.</p>
@@ -103,9 +136,14 @@
         <div class="content-wrap"
         <h2>Education</h2>
         <!-- Copy this whole <section> block to add more schools. -->
-        <section>
+        <section id="e1">
           <h3>Wake Tech Community - Raleigh, NC</h3>
           <p>Advertising & Graphic Design, 2021- Present</p>
+          <p></p>
+        </section>
+        <section i>
+          <h3>UMUC - College Park MD</h3>
+          <p>Business Project Management, 2010 </p>
           <p></p>
         </section>
       </div>

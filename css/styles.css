@@ -6,9 +6,46 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
-img {
-  width: 300px;
+nav {
+  overflow: hidden;
 }
+
+nav li {
+  list-style-type: none;
+  margin: 16px;
+  display: flex;
+  color: #ffe66d;
+}
+nav ul {
+  margin: 0 30%;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+}
+nav li a:hover {
+  color: #4a4a4a;
+}
+nav ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: #4a4a4a;
+}
+nav ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+
 a {
   color: #ffe66d;
 }
@@ -63,6 +100,7 @@ h1 {
 }
 
 /* footer */
+nav,
 footer {
   background: #343434;
   color: #f7fff7;

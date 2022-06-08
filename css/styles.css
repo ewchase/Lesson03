@@ -6,14 +6,14 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
+/*** Navigation Bar ***/
 nav {
   overflow: hidden;
 }
 
 nav li {
   list-style-type: none;
-  margin: 16px;
-  display: flex;
+  margin: 10px;
   color: #ffe66d;
 }
 nav ul {
@@ -62,7 +62,7 @@ img {
   height: 250px;
 }
 
-/* profile */
+/*** Profile ***/
 header {
   color: #f7fff7;
   background-color: #386278;
@@ -76,7 +76,7 @@ h1 {
   font-size: 56px;
   margin: 0;
 }
-/* projects */
+/***  Projects ***/
 .projects {
   background: #f7fff7;
 }
@@ -94,12 +94,12 @@ h1 {
   background: rgba(47, 48, 97, 80%);
 }
 
-/* work */
+/*** Work ***/
 .work {
   background: #a1c6d7;
 }
 
-/* footer */
+/*** Footer ***/
 nav,
 footer {
   background: #343434;

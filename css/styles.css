@@ -8,7 +8,8 @@ body {
 }
 /*** Navigation Bar ***/
 nav {
-  overflow: hidden;
+  display: flex;
+  text-align: center;
 }
 
 nav li {
@@ -16,9 +17,21 @@ nav li {
   margin: 10px;
   color: #ffe66d;
 }
+
 nav ul {
   margin: 0 30%;
   display: flex;
+}
+@media screen and (max-width: 830px) {
+  nav ul {
+    margin: 0 15%;
+  }
+}
+@media screen and (max-width: 430px) {
+  nav ul {
+    display: block;
+    margin: auto;
+  }
 }
 nav a {
   text-decoration: none;
@@ -31,7 +44,7 @@ nav ul li ul {
   opacity: 0;
   position: absolute;
   padding-left: 0;
-  left: 0;
+  right: 15%;
   display: none;
   background: #4a4a4a;
 }
@@ -45,6 +58,14 @@ ul li ul:hover {
   padding-top: 5px;
   box-shadow: 0px 3px 5px -1px #ccc;
 }
+/*** Header  ***/
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  float: left;
+  padding: 0 10px;
+}
 
 a {
   color: #ffe66d;
@@ -53,10 +74,29 @@ a:hover {
   text-decoration: none;
 }
 .content-wrap {
-  width: 75%;
+  max-width: 85%;
   margin: 0 auto;
   padding: 60px 0;
 }
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
 img {
   width: 300px;
   height: 250px;
@@ -93,12 +133,45 @@ h1 {
 .projects .btn:hover {
   background: rgba(47, 48, 97, 80%);
 }
+.project-item {
+  overflow: hidden;
+}
+.project-item a {
+  color: white;
+  background-color: #343434;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
 
+.project-item img {
+  float: left;
+  margin-right: 20px;
+}
+.project-item h3 {
+  margin-top: 0;
+}
 /*** Work ***/
 .work {
   background: #a1c6d7;
 }
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
 
+/*** Education ***/
+#edu {
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+#edu p {
+  width: 60%;
+}
 /*** Footer ***/
 nav,
 footer {

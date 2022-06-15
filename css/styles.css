@@ -22,29 +22,35 @@ nav ul {
   margin: 0 30%;
   display: flex;
 }
-@media screen and (max-width: 1280px) {
+
+@media screen and (max-width: 4320px) {
   nav ul {
-    margin: 0 15%;
+    margin: 0 30%;
   }
-  .profile-img {
+  /* Keep .profile-img settings for single image */
+  /*.profile-img {
+    float: left;
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    float: left;
     padding: 0 10px;
+  }*/
+  .project-item img {
+    width: 300px;
+    height: 250px;
   }
 }
 @media screen and (max-width: 750px) {
   nav ul {
     margin: 0 15%;
   }
-  .profile-img {
+  /*.profile-img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     float: left;
     padding: 0 10px;
-  }
+  }*/
   .project-item img {
     width: 200px;
     height: 175px;
@@ -55,18 +61,20 @@ nav ul {
     display: block;
     margin: auto;
   }
-  .profile-img {
+
+  /*.profile-img {
     border-radius: 50%;
     width: 75px;
     height: 75px;
     float: left;
     padding: 0 10px;
-  }
+  }*/
   .project-item img {
     width: 125px;
     height: 100px;
   }
 }
+
 nav a {
   text-decoration: none;
 }
@@ -123,11 +131,6 @@ h3 {
   border-bottom: none;
 }
 
-img {
-  width: 300px;
-  height: 250px;
-}
-
 /*** Profile ***/
 header {
   color: #f7fff7;
@@ -141,6 +144,10 @@ h1 {
   font-family: Parisienne, sans-serif;
   font-size: 56px;
   margin: 0;
+}
+.profile-img {
+  float: left;
+  padding-right: 10px;
 }
 /***  Projects ***/
 .projects {
@@ -190,14 +197,13 @@ h1 {
 
 /*** Education ***/
 #edu {
-  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-image: url(../images/siora-photography-hgFY1mZY-Y0-unsplash.jpg);
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
+  color: rgb(247, 247, 247);
 }
-#edu p {
-  width: 60%;
-}
+
 /*** Footer ***/
 nav,
 footer {
